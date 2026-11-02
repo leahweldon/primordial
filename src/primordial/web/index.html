@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Primordial</title>
+  <meta name="description" content="An evolution sandbox: tiny neural-network creatures forage, fight and reproduce, and new species emerge over generations.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='13' fill='%23E6E9D3' stroke='%231F2A2E' stroke-width='2'/><circle cx='12' cy='14' r='4' fill='%233F7CAC'/><circle cx='20' cy='19' r='3' fill='%23B23A48'/></svg>">
+</head>
+<body>
+  <header class="topbar">
+    <h1 class="brand">Primordial</h1>
+    <dl class="readout" aria-live="off">
+      <div><dt>Tick</dt><dd id="r-tick">0</dd></div>
+      <div><dt>Alive</dt><dd id="r-pop">0</dd></div>
+      <div><dt>Species</dt><dd id="r-species">0</dd></div>
+      <div><dt>Predators</dt><dd id="r-pred">0</dd></div>
+      <div><dt>Generation</dt><dd id="r-gen">0</dd></div>
+      <div><dt>Season</dt><dd id="r-season">Spring</dd></div>
+      <div class="dim"><dt>ms / tick</dt><dd id="r-ms">0</dd></div>
+      <div class="dim"><dt>Watching</dt><dd id="r-viewers">1</dd></div>
+    </dl>
+    <div class="transport">
+      <button id="btn-pause" class="btn" aria-pressed="false">Pause</button>
+      <label class="speed">Speed
+        <select id="speed">
+          <option value="1">1×</option><option value="2">2×</option>
+          <option value="4" selected>4×</option><option value="8">8×</option>
+          <option value="16">16×</option><option value="32">32×</option>
+        </select>
+      </label>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="stage" aria-label="The world">
+      <div class="dish-wrap">
+        <canvas id="world" aria-label="Simulation view. Click a creature to inspect it, scroll to zoom, drag to pan."></canvas>
+        <div class="glass" aria-hidden="true"></div>
+        <div id="frost" class="frost" aria-hidden="true"></div>
+        <p id="headline" class="headline" aria-live="polite" hidden></p>
+        <div id="hover-tip" class="hover-tip" hidden></div>
+        <div class="zoom" role="group" aria-label="Zoom">
+          <button id="zoom-in" aria-label="Zoom in">+</button>
+          <button id="zoom-out" aria-label="Zoom out">−</button>
+          <button id="zoom-fit" aria-label="Show the whole world">Fit</button>
+        </div>
+        <div id="conn" class="conn" hidden>Connecting to the simulation…</div>
+        <div id="toast" class="toast" role="status" hidden></div>
+      </div>
+      <div class="toolbar" role="toolbar" aria-label="Click tool">
+        <span class="toolbar-label">Click the world to</span>
+        <button class="tool is-active" data-tool="inspect">Inspect a creature</button>
+        <button class="tool" data-tool="meteor">Drop a meteor</button>
+        <button class="tool" data-tool="bloom">Grow a food bloom</button>
+        <button class="tool" data-tool="invasion">Release newcomers</button>
+        <span class="toolbar-spacer"></span>
+        <label class="colour-mode">Microscope
+          <select id="microscope">
+            <option value="dark">dark field</option>
+            <option value="bright">bright field</option>
+          </select>
+        </label>
+        <label class="colour-mode">Colour by
+          <select id="colour-mode">
+            <option value="species">species</option>
+            <option value="family">family</option>
+            <option value="diet">diet</option>
+          </select>
+        </label>
+      </div>
+      <ul class="legend" aria-label="How to read a creature">
+        <li><canvas class="legend-icon" data-icon="grazer" aria-hidden="true"></canvas>Grazers are round and fuzzy, with eyes on the sides to watch for danger.</li>
+        <li><canvas class="legend-icon" data-icon="hunter" aria-hidden="true"></canvas>Hunters are long and spiky, with forward eyes and pincers.</li>
+        <li><canvas class="legend-icon" data-icon="ready" aria-hidden="true"></canvas>A glowing centre means ready to breed.</li>
+        <li><canvas class="legend-icon" data-icon="starving" aria-hidden="true"></canvas>Faded and thin means starving or old.</li>
+        <li><canvas class="legend-icon" data-icon="fast" aria-hidden="true"></canvas>Long tails belong to fast swimmers.</li>
+      </ul>
+
+      <section class="card tree-card" aria-labelledby="h-tree">
+        <div class="card-head">
+          <h2 id="h-tree">Tree of life</h2>
+          <p class="hint">Each band is a species, as thick as its population. Click one to find its members in the world.</p>
+        </div>
+        <div class="tree-wrap">
+          <canvas id="tree" class="tree" height="250" aria-label="Phylogenetic tree of every named species"></canvas>
+          <div id="tree-tip" class="tree-tip" hidden></div>
+        </div>
+      </section>
+
+      <section class="card guide-card" aria-labelledby="h-guide">
+        <div class="card-head">
+          <h2 id="h-guide">Field guide</h2>
+          <p class="hint">Every living species, drawn from its genes when it was first named. Click one to find it in the world.</p>
+        </div>
+        <ul id="guide" class="guide"></ul>
+      </section>
+
+      <div class="below">
+        <section class="card" aria-labelledby="h-env">
+          <h2 id="h-env">Environment</h2>
+          <div id="sliders" class="sliders"></div>
+          <div class="world-actions">
+            <label class="seed">Seed <input id="seed" type="number" min="0" max="2147483647" inputmode="numeric"></label>
+            <button id="btn-reset" class="btn">Start a new world</button>
+          </div>
+          <div class="world-actions quiet-row">
+            <a class="btn btn-quiet" href="/api/snapshot" download>Save this world</a>
+            <label class="btn btn-quiet file-btn">Load a saved world
+              <input id="load-world" type="file" accept=".npz">
+            </label>
+            <a class="btn btn-quiet" href="/api/history.csv" download>Download history (CSV)</a>
+          </div>
+        </section>
+
+        <section class="card" aria-labelledby="h-log">
+          <h2 id="h-log">Field notes</h2>
+          <ol id="log" class="log"></ol>
+        </section>
+      </div>
+    </section>
+
+    <aside class="panel">
+      <section class="card" aria-labelledby="h-pop">
+        <h2 id="h-pop">Who's alive</h2>
+        <canvas id="chart-pop" class="chart" height="150"></canvas>
+        <ul class="key">
+          <li><i class="sw sw-forager"></i>Foragers</li>
+          <li><i class="sw sw-omnivore"></i>Omnivores</li>
+          <li><i class="sw sw-predator"></i>Predators</li>
+        </ul>
+      </section>
+
+      <section class="card" aria-labelledby="h-traits">
+        <h2 id="h-traits">What's evolving</h2>
+        <div class="spark-grid">
+          <figure><figcaption>Body size <b id="v-size"></b></figcaption><canvas id="spark-size" class="spark" height="44"></canvas></figure>
+          <figure><figcaption>Top speed <b id="v-speed"></b></figcaption><canvas id="spark-speed" class="spark" height="44"></canvas></figure>
+          <figure><figcaption>Meat in diet <b id="v-diet"></b></figcaption><canvas id="spark-diet" class="spark" height="44"></canvas></figure>
+          <figure><figcaption>Biting <b id="v-attack"></b></figcaption><canvas id="spark-attack" class="spark" height="44"></canvas></figure>
+        </div>
+      </section>
+
+      <section class="card inspector" aria-labelledby="h-inspect">
+        <h2 id="h-inspect">Creature</h2>
+        <p id="inspect-empty" class="hint">Click any creature to watch its brain think.</p>
+        <div id="inspect-body" hidden>
+          <div class="who">
+            <span id="i-swatch" class="who-swatch"></span>
+            <div>
+              <p class="who-name" id="i-name"></p>
+              <p class="who-sub" id="i-sub"></p>
+            </div>
+          </div>
+          <div class="who-actions">
+            <span id="i-doing" class="doing"></span>
+            <button id="i-follow" class="btn btn-quiet" aria-pressed="false">Follow</button>
+            <button id="i-close" class="btn btn-quiet">Close</button>
+          </div>
+          <canvas id="portrait" class="portrait" aria-label="Live portrait of this creature"></canvas>
+          <dl class="traits" id="i-traits"></dl>
+          <canvas id="brain" class="brain" height="250" aria-label="Live diagram of this creature's brain"></canvas>
+          <p class="hint small">Live: each neuron glows blue when it fires positive and red when negative. Lines show signals flowing through the brain right now.</p>
+        </div>
+      </section>
+    </aside>
+  </main>
+
+  <script src="/static/gl/glkit.js"></script>
+  <script src="/static/gl/shaders.js"></script>
+  <script src="/static/gl/renderer.js"></script>
+  <script src="/static/art.js"></script>
+  <script src="/static/world-gpu.js"></script>
+  <script src="/static/app.js"></script>
+</body>
+</html>
