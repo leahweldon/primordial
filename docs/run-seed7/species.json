@@ -1,0 +1,442 @@
+[
+ {
+  "id": 0,
+  "parent": -1,
+  "born": 0,
+  "root_kind": "founder",
+  "extinct": 22300,
+  "established": 0,
+  "name": "Lumaeodon primus",
+  "genus": "Lumaeodon",
+  "color": "#3b78a8",
+  "traits": {
+   "size": 1.052,
+   "speed": 2.232,
+   "diet": 0.148,
+   "strategy": "forager"
+  },
+  "count": 0,
+  "peak": 778,
+  "ancestor": -1
+ },
+ {
+  "id": 1,
+  "parent": 0,
+  "born": 6382,
+  "root_kind": null,
+  "extinct": 13000,
+  "established": 7330,
+  "name": "Ulaura vorax",
+  "genus": "Ulaura",
+  "color": "#d08c2c",
+  "traits": {
+   "size": 1.036,
+   "speed": 2.642,
+   "diet": 0.903,
+   "strategy": "predator"
+  },
+  "count": 0,
+  "peak": 31,
+  "ancestor": 0
+ },
+ {
+  "id": 4,
+  "parent": 0,
+  "born": 7835,
+  "root_kind": null,
+  "extinct": null,
+  "established": 8910,
+  "name": "Glyaoma rapax",
+  "genus": "Glyaoma",
+  "color": "#8e5aa8",
+  "traits": {
+   "size": 1.264,
+   "speed": 3.87,
+   "diet": 0.915,
+   "strategy": "predator"
+  },
+  "count": 31,
+  "peak": 108,
+  "ancestor": 0
+ },
+ {
+  "id": 6,
+  "parent": 0,
+  "born": 8591,
+  "root_kind": null,
+  "extinct": 16850,
+  "established": 8900,
+  "name": "Lumaeodon parvus",
+  "genus": "Lumaeodon",
+  "color": "#5c9e5a",
+  "traits": {
+   "size": 0.584,
+   "speed": 3.802,
+   "diet": 0.17,
+   "strategy": "forager"
+  },
+  "count": 0,
+  "peak": 123,
+  "ancestor": 0
+ },
+ {
+  "id": 7,
+  "parent": 6,
+  "born": 10145,
+  "root_kind": null,
+  "extinct": 18190,
+  "established": 11950,
+  "name": "Pyraites segnis",
+  "genus": "Pyraites",
+  "color": "#c75d8f",
+  "traits": {
+   "size": 0.591,
+   "speed": 2.652,
+   "diet": 0.036,
+   "strategy": "forager"
+  },
+  "count": 0,
+  "peak": 108,
+  "ancestor": 6
+ },
+ {
+  "id": 8,
+  "parent": 0,
+  "born": 10215,
+  "root_kind": null,
+  "extinct": 26410,
+  "established": 10930,
+  "name": "Fenaeodon minor",
+  "genus": "Fenaeodon",
+  "color": "#2a9d9a",
+  "traits": {
+   "size": 0.532,
+   "speed": 2.679,
+   "diet": 0.06,
+   "strategy": "forager"
+  },
+  "count": 0,
+  "peak": 328,
+  "ancestor": 0
+ },
+ {
+  "id": 10,
+  "parent": 8,
+  "born": 13937,
+  "root_kind": null,
+  "extinct": 16810,
+  "established": 15030,
+  "name": "Syluulus celer",
+  "genus": "Syluulus",
+  "color": "#b5643c",
+  "traits": {
+   "size": 0.551,
+   "speed": 4.083,
+   "diet": 0.073,
+   "strategy": "forager"
+  },
+  "count": 0,
+  "peak": 25,
+  "ancestor": 8
+ },
+ {
+  "id": 15,
+  "parent": 0,
+  "born": 14759,
+  "root_kind": null,
+  "extinct": 28530,
+  "established": 15000,
+  "name": "Lumaeodon minimus",
+  "genus": "Lumaeodon",
+  "color": "#7d8a2e",
+  "traits": {
+   "size": 0.602,
+   "speed": 2.318,
+   "diet": 0.145,
+   "strategy": "forager"
+  },
+  "count": 0,
+  "peak": 478,
+  "ancestor": 0
+ },
+ {
+  "id": 21,
+  "parent": 7,
+  "born": 15485,
+  "root_kind": null,
+  "extinct": 18570,
+  "established": 17150,
+  "name": "Pyraites quietus",
+  "genus": "Pyraites",
+  "color": "#4f5fb8",
+  "traits": {
+   "size": 0.527,
+   "speed": 2.043,
+   "diet": 0.125,
+   "strategy": "forager"
+  },
+  "count": 0,
+  "peak": 32,
+  "ancestor": 7
+ },
+ {
+  "id": 24,
+  "parent": 8,
+  "born": 17081,
+  "root_kind": null,
+  "extinct": 26990,
+  "established": 17300,
+  "name": "Beliulus tardus",
+  "genus": "Beliulus",
+  "color": "#3f8f73",
+  "traits": {
+   "size": 0.57,
+   "speed": 1.483,
+   "diet": 0.06,
+   "strategy": "forager"
+  },
+  "count": 0,
+  "peak": 84,
+  "ancestor": 8
+ },
+ {
+  "id": 35,
+  "parent": 15,
+  "born": 19664,
+  "root_kind": null,
+  "extinct": 35740,
+  "established": 20960,
+  "name": "Lumaeodon rapidus",
+  "genus": "Lumaeodon",
+  "color": "#a45252",
+  "traits": {
+   "size": 0.524,
+   "speed": 2.864,
+   "diet": 0.055,
+   "strategy": "forager"
+  },
+  "count": 0,
+  "peak": 347,
+  "ancestor": 15
+ },
+ {
+  "id": 45,
+  "parent": 35,
+  "born": 21588,
+  "root_kind": null,
+  "extinct": 26780,
+  "established": 22950,
+  "name": "Ulyaster tardus",
+  "genus": "Ulyaster",
+  "color": "#9a7b4f",
+  "traits": {
+   "size": 0.57,
+   "speed": 2.472,
+   "diet": 0.059,
+   "strategy": "forager"
+  },
+  "count": 0,
+  "peak": 71,
+  "ancestor": 35
+ },
+ {
+  "id": 47,
+  "parent": 8,
+  "born": 22361,
+  "root_kind": null,
+  "extinct": 25000,
+  "established": 23200,
+  "name": "Draeia volans",
+  "genus": "Draeia",
+  "color": "#3b78a8",
+  "traits": {
+   "size": 0.592,
+   "speed": 3.985,
+   "diet": 0.129,
+   "strategy": "forager"
+  },
+  "count": 0,
+  "peak": 31,
+  "ancestor": 8
+ },
+ {
+  "id": 48,
+  "parent": 15,
+  "born": 22484,
+  "root_kind": null,
+  "extinct": 29510,
+  "established": 23260,
+  "name": "Lumaeodon modestus",
+  "genus": "Lumaeodon",
+  "color": "#d08c2c",
+  "traits": {
+   "size": 0.53,
+   "speed": 2.607,
+   "diet": 0.042,
+   "strategy": "forager"
+  },
+  "count": 0,
+  "peak": 76,
+  "ancestor": 15
+ },
+ {
+  "id": 51,
+  "parent": 24,
+  "born": 22802,
+  "root_kind": null,
+  "extinct": 25690,
+  "established": 23760,
+  "name": "Feneaster rapidus",
+  "genus": "Feneaster",
+  "color": "#8e5aa8",
+  "traits": {
+   "size": 0.558,
+   "speed": 2.914,
+   "diet": 0.239,
+   "strategy": "forager"
+  },
+  "count": 0,
+  "peak": 59,
+  "ancestor": 24
+ },
+ {
+  "id": 52,
+  "parent": 15,
+  "born": 23227,
+  "root_kind": null,
+  "extinct": 37630,
+  "established": 23630,
+  "name": "Voriura velox",
+  "genus": "Voriura",
+  "color": "#5c9e5a",
+  "traits": {
+   "size": 0.532,
+   "speed": 2.676,
+   "diet": 0.035,
+   "strategy": "forager"
+  },
+  "count": 0,
+  "peak": 198,
+  "ancestor": 15
+ },
+ {
+  "id": 59,
+  "parent": 45,
+  "born": 24886,
+  "root_kind": null,
+  "extinct": 30150,
+  "established": 25980,
+  "name": "Ulyaster communis",
+  "genus": "Ulyaster",
+  "color": "#2a9d9a",
+  "traits": {
+   "size": 0.539,
+   "speed": 2.564,
+   "diet": 0.25,
+   "strategy": "forager"
+  },
+  "count": 0,
+  "peak": 52,
+  "ancestor": 45
+ },
+ {
+  "id": 61,
+  "parent": 35,
+  "born": 28783,
+  "root_kind": null,
+  "extinct": 35600,
+  "established": 29480,
+  "name": "Fenuopsis velox",
+  "genus": "Fenuopsis",
+  "color": "#c75d8f",
+  "traits": {
+   "size": 0.531,
+   "speed": 4.454,
+   "diet": 0.178,
+   "strategy": "forager"
+  },
+  "count": 0,
+  "peak": 176,
+  "ancestor": 35
+ },
+ {
+  "id": 64,
+  "parent": 35,
+  "born": 29106,
+  "root_kind": null,
+  "extinct": null,
+  "established": 30300,
+  "name": "Lumaeodon maximus",
+  "genus": "Lumaeodon",
+  "color": "#7d8a2e",
+  "traits": {
+   "size": 0.607,
+   "speed": 3.195,
+   "diet": 0.145,
+   "strategy": "forager"
+  },
+  "count": 52,
+  "peak": 508,
+  "ancestor": 35
+ },
+ {
+  "id": 69,
+  "parent": 35,
+  "born": 30308,
+  "root_kind": null,
+  "extinct": 33420,
+  "established": 32690,
+  "name": "Lumaeodon velox",
+  "genus": "Lumaeodon",
+  "color": "#b5643c",
+  "traits": {
+   "size": 0.531,
+   "speed": 3.348,
+   "diet": 0.115,
+   "strategy": "forager"
+  },
+  "count": 0,
+  "peak": 21,
+  "ancestor": 35
+ },
+ {
+  "id": 73,
+  "parent": 64,
+  "born": 35560,
+  "root_kind": null,
+  "extinct": null,
+  "established": 36120,
+  "name": "Lumaeodon fugax",
+  "genus": "Lumaeodon",
+  "color": "#4f5fb8",
+  "traits": {
+   "size": 0.558,
+   "speed": 3.733,
+   "diet": 0.036,
+   "strategy": "forager"
+  },
+  "count": 153,
+  "peak": 157,
+  "ancestor": 64
+ },
+ {
+  "id": 75,
+  "parent": 64,
+  "born": 36399,
+  "root_kind": null,
+  "extinct": null,
+  "established": 36760,
+  "name": "Elaeella celer",
+  "genus": "Elaeella",
+  "color": "#3f8f73",
+  "traits": {
+   "size": 0.54,
+   "speed": 4.343,
+   "diet": 0.065,
+   "strategy": "forager"
+  },
+  "count": 82,
+  "peak": 128,
+  "ancestor": 64
+ }
+]

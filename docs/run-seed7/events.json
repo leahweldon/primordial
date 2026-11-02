@@ -1,0 +1,338 @@
+[
+ {
+  "seq": 1,
+  "tick": 0,
+  "kind": "origin",
+  "level": "headline",
+  "text": "Life begins: 160 creatures of *Lumaeodon primus*, plant-eaters with random brains."
+ },
+ {
+  "seq": 2,
+  "tick": 1560,
+  "kind": "boom",
+  "level": "headline",
+  "text": "Population boom: a record 506 creatures are alive."
+ },
+ {
+  "seq": 3,
+  "tick": 5380,
+  "kind": "predators",
+  "level": "headline",
+  "text": "The first predators have evolved. 5 creatures now get most of their energy by hunting other creatures."
+ },
+ {
+  "seq": 4,
+  "tick": 6590,
+  "kind": "boom",
+  "level": "headline",
+  "text": "Population boom: a record 633 creatures are alive."
+ },
+ {
+  "seq": 5,
+  "tick": 7330,
+  "kind": "speciation",
+  "level": "headline",
+  "text": "A new species: *Ulaura vorax*, branching off from *Lumaeodon primus*. It hunts other creatures."
+ },
+ {
+  "seq": 6,
+  "tick": 8900,
+  "kind": "speciation",
+  "level": "note",
+  "text": "A new species: *Lumaeodon parvus*, branching off from *Lumaeodon primus*. It is 70% faster and 44% smaller."
+ },
+ {
+  "seq": 7,
+  "tick": 8910,
+  "kind": "speciation",
+  "level": "headline",
+  "text": "A new species: *Glyaoma rapax*, branching off from *Lumaeodon primus*. It hunts other creatures."
+ },
+ {
+  "seq": 8,
+  "tick": 10140,
+  "kind": "dynasty",
+  "level": "headline",
+  "text": "One family now makes up over 90% of all life. Every other line is close to dying out."
+ },
+ {
+  "seq": 9,
+  "tick": 10930,
+  "kind": "speciation",
+  "level": "note",
+  "text": "A new species: *Fenaeodon minor*, branching off from *Lumaeodon primus*. It is 20% faster and 49% smaller."
+ },
+ {
+  "seq": 10,
+  "tick": 11950,
+  "kind": "speciation",
+  "level": "note",
+  "text": "A new species: *Pyraites segnis*, branching off from *Lumaeodon parvus*. It is 30% slower."
+ },
+ {
+  "seq": 11,
+  "tick": 13000,
+  "kind": "extinct",
+  "level": "note",
+  "text": "*Ulaura vorax* has gone extinct after 6,618 ticks. At its peak there were 31 of them."
+ },
+ {
+  "seq": 12,
+  "tick": 13220,
+  "kind": "boom",
+  "level": "headline",
+  "text": "Population boom: a record 794 creatures are alive."
+ },
+ {
+  "seq": 13,
+  "tick": 15000,
+  "kind": "speciation",
+  "level": "note",
+  "text": "A new species: *Lumaeodon minimus*, branching off from *Lumaeodon primus*. It is 43% smaller."
+ },
+ {
+  "seq": 14,
+  "tick": 15030,
+  "kind": "speciation",
+  "level": "note",
+  "text": "A new species: *Syluulus celer*, branching off from *Fenaeodon minor*. It is 52% faster."
+ },
+ {
+  "seq": 15,
+  "tick": 15190,
+  "kind": "generation",
+  "level": "note",
+  "text": "The 100th generation has been born."
+ },
+ {
+  "seq": 16,
+  "tick": 16810,
+  "kind": "extinct",
+  "level": "note",
+  "text": "*Syluulus celer* has gone extinct after 2,873 ticks. At its peak there were 25 of them."
+ },
+ {
+  "seq": 17,
+  "tick": 16850,
+  "kind": "extinct",
+  "level": "note",
+  "text": "*Lumaeodon parvus* has gone extinct after 8,259 ticks. At its peak there were 123 of them."
+ },
+ {
+  "seq": 18,
+  "tick": 17150,
+  "kind": "speciation",
+  "level": "note",
+  "text": "A new species: *Pyraites quietus*, branching off from *Pyraites segnis*. It is 23% slower and 11% smaller."
+ },
+ {
+  "seq": 19,
+  "tick": 17300,
+  "kind": "speciation",
+  "level": "note",
+  "text": "A new species: *Beliulus tardus*, branching off from *Fenaeodon minor*. It is 45% slower."
+ },
+ {
+  "seq": 20,
+  "tick": 18190,
+  "kind": "extinct",
+  "level": "note",
+  "text": "*Pyraites segnis* has gone extinct after 8,045 ticks. At its peak there were 108 of them."
+ },
+ {
+  "seq": 21,
+  "tick": 18570,
+  "kind": "extinct",
+  "level": "note",
+  "text": "*Pyraites quietus* has gone extinct after 3,085 ticks. At its peak there were 32 of them."
+ },
+ {
+  "seq": 22,
+  "tick": 20960,
+  "kind": "speciation",
+  "level": "note",
+  "text": "A new species: *Lumaeodon rapidus*, branching off from *Lumaeodon minimus*. It is 24% faster and 13% smaller."
+ },
+ {
+  "seq": 23,
+  "tick": 22300,
+  "kind": "extinct",
+  "level": "headline",
+  "text": "*Lumaeodon primus* has gone extinct after 22,300 ticks. At its peak there were 778 of them."
+ },
+ {
+  "seq": 24,
+  "tick": 22950,
+  "kind": "speciation",
+  "level": "note",
+  "text": "A new species: *Ulyaster tardus*, branching off from *Lumaeodon rapidus*. It is 14% slower."
+ },
+ {
+  "seq": 25,
+  "tick": 23200,
+  "kind": "speciation",
+  "level": "note",
+  "text": "A new species: *Draeia volans*, branching off from *Fenaeodon minor*. It is 49% faster and 11% bigger."
+ },
+ {
+  "seq": 26,
+  "tick": 23260,
+  "kind": "speciation",
+  "level": "note",
+  "text": "A new species: *Lumaeodon modestus*, branching off from *Lumaeodon minimus*. It is 12% faster and 12% smaller."
+ },
+ {
+  "seq": 27,
+  "tick": 23630,
+  "kind": "speciation",
+  "level": "note",
+  "text": "A new species: *Voriura velox*, branching off from *Lumaeodon minimus*. It is 15% faster and 12% smaller."
+ },
+ {
+  "seq": 28,
+  "tick": 23760,
+  "kind": "speciation",
+  "level": "note",
+  "text": "A new species: *Feneaster rapidus*, branching off from *Beliulus tardus*. It is 96% faster."
+ },
+ {
+  "seq": 29,
+  "tick": 25000,
+  "kind": "extinct",
+  "level": "note",
+  "text": "*Draeia volans* has gone extinct after 2,639 ticks. At its peak there were 31 of them."
+ },
+ {
+  "seq": 30,
+  "tick": 25690,
+  "kind": "extinct",
+  "level": "note",
+  "text": "*Feneaster rapidus* has gone extinct after 2,888 ticks. At its peak there were 59 of them."
+ },
+ {
+  "seq": 31,
+  "tick": 25980,
+  "kind": "speciation",
+  "level": "note",
+  "text": "A new species: *Ulyaster communis*, branching off from *Ulyaster tardus*. It looks much the same, but its brain is wired differently."
+ },
+ {
+  "seq": 32,
+  "tick": 26410,
+  "kind": "extinct",
+  "level": "headline",
+  "text": "*Fenaeodon minor* has gone extinct after 16,195 ticks. At its peak there were 328 of them."
+ },
+ {
+  "seq": 33,
+  "tick": 26780,
+  "kind": "extinct",
+  "level": "note",
+  "text": "*Ulyaster tardus* has gone extinct after 5,192 ticks. At its peak there were 71 of them."
+ },
+ {
+  "seq": 34,
+  "tick": 26990,
+  "kind": "extinct",
+  "level": "note",
+  "text": "*Beliulus tardus* has gone extinct after 9,909 ticks. At its peak there were 84 of them."
+ },
+ {
+  "seq": 35,
+  "tick": 27590,
+  "kind": "arms_race",
+  "level": "headline",
+  "text": "Arms race: creatures are now 26% faster than when the first predators appeared."
+ },
+ {
+  "seq": 36,
+  "tick": 28530,
+  "kind": "extinct",
+  "level": "headline",
+  "text": "*Lumaeodon minimus* has gone extinct after 13,771 ticks. At its peak there were 478 of them."
+ },
+ {
+  "seq": 37,
+  "tick": 28910,
+  "kind": "arms_race",
+  "level": "headline",
+  "text": "Arms race: creatures are now 51% faster than when the first predators appeared."
+ },
+ {
+  "seq": 38,
+  "tick": 29480,
+  "kind": "speciation",
+  "level": "note",
+  "text": "A new species: *Fenuopsis velox*, branching off from *Lumaeodon rapidus*. It is 56% faster."
+ },
+ {
+  "seq": 39,
+  "tick": 29510,
+  "kind": "extinct",
+  "level": "note",
+  "text": "*Lumaeodon modestus* has gone extinct after 7,026 ticks. At its peak there were 76 of them."
+ },
+ {
+  "seq": 40,
+  "tick": 30150,
+  "kind": "extinct",
+  "level": "note",
+  "text": "*Ulyaster communis* has gone extinct after 5,264 ticks. At its peak there were 52 of them."
+ },
+ {
+  "seq": 41,
+  "tick": 30300,
+  "kind": "speciation",
+  "level": "note",
+  "text": "A new species: *Lumaeodon maximus*, branching off from *Lumaeodon rapidus*. It is 12% faster and 16% bigger."
+ },
+ {
+  "seq": 42,
+  "tick": 32690,
+  "kind": "speciation",
+  "level": "note",
+  "text": "A new species: *Lumaeodon velox*, branching off from *Lumaeodon rapidus*. It is 17% faster."
+ },
+ {
+  "seq": 43,
+  "tick": 33420,
+  "kind": "extinct",
+  "level": "note",
+  "text": "*Lumaeodon velox* has gone extinct after 3,112 ticks. At its peak there were 21 of them."
+ },
+ {
+  "seq": 44,
+  "tick": 35600,
+  "kind": "extinct",
+  "level": "headline",
+  "text": "*Fenuopsis velox* has gone extinct after 6,817 ticks. At its peak there were 176 of them."
+ },
+ {
+  "seq": 45,
+  "tick": 35740,
+  "kind": "extinct",
+  "level": "headline",
+  "text": "*Lumaeodon rapidus* has gone extinct after 16,076 ticks. At its peak there were 347 of them."
+ },
+ {
+  "seq": 46,
+  "tick": 36120,
+  "kind": "speciation",
+  "level": "note",
+  "text": "A new species: *Lumaeodon fugax*, branching off from *Lumaeodon maximus*. It is 17% faster."
+ },
+ {
+  "seq": 47,
+  "tick": 36760,
+  "kind": "speciation",
+  "level": "note",
+  "text": "A new species: *Elaeella celer*, branching off from *Lumaeodon maximus*. It is 36% faster and 11% smaller."
+ },
+ {
+  "seq": 48,
+  "tick": 37630,
+  "kind": "extinct",
+  "level": "headline",
+  "text": "*Voriura velox* has gone extinct after 14,403 ticks. At its peak there were 198 of them."
+ }
+]
