@@ -6,7 +6,7 @@ An evolution sandbox. Hundreds of small creatures, each driven by its own tiny n
 
 You watch it happen in the browser, through a microscope rendered by a custom WebGL2 engine, where every creature is drawn from its own genes: plant-eaters are round and fuzzy, hunters are long and spiky with pincers, fast swimmers grow long tails, and veterans carry scars. A narrator calls out the big moments as they happen, you can follow any creature with the camera and watch its brain fire, and you can drop meteors, grow food or change the climate while it runs.
 
-![Primordial running in the browser](docs/demo.gif)
+![Predators hunting through a swarm of grazers under the dark-field microscope](docs/predators.webp)
 
 [See the whole interface in one screenshot.](docs/screenshot-full.png)
 
@@ -28,7 +28,7 @@ Turn the speed up to 16× or 32×. Predators usually evolve within a minute or t
 
 ## A history of one world
 
-Every creature starts as a plant-eater with a random brain. This is a 40,000-tick run of seed 7, reproduced exactly by `primordial run --seed 7 --ticks 40000`. The live app starts on the same seed, so if nobody interferes you'll see the same history unfold.
+Every creature starts as a plant-eater with a random brain. This is a 40,000-tick run of seed 7, reproduced by `primordial run --seed 7 --ticks 40000` (runs are deterministic for a given seed, machine and NumPy version). The live app starts on the same seed, so if nobody interferes you'll see a history like this unfold.
 
 ![Tree of life for seed 7: 22 species over 40,000 ticks](docs/tree-seed7.png)
 
