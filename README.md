@@ -1,5 +1,7 @@
 # Primordial
 
+[![CI](https://github.com/leahweldon/primordial/actions/workflows/ci.yml/badge.svg)](https://github.com/leahweldon/primordial/actions/workflows/ci.yml) ![Python 3.11–3.13](https://img.shields.io/badge/Python-3.11%E2%80%933.13-3776ab) ![WebGL2](https://img.shields.io/badge/WebGL2-custom%20renderer-990000) ![FastAPI](https://img.shields.io/badge/FastAPI-WebSockets-009688) ![Tests: 66](https://img.shields.io/badge/tests-66-success) [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+
 An evolution sandbox. Hundreds of small creatures, each driven by its own tiny neural network, forage, fight and reproduce in a shared world. Nobody tells them what to do and there is no fitness function. The creatures that happen to survive long enough to have children pass on their brains and bodies, with small mutations. Over a few hundred generations, real strategies appear on their own: herds of fast foragers, ambush predators, an arms race between the two. And new species, each with its own name and its own place in a live tree of life.
 
 You watch it happen in the browser, through a microscope rendered by a custom WebGL2 engine, where every creature is drawn from its own genes: plant-eaters are round and fuzzy, hunters are long and spiky with pincers, fast swimmers grow long tails, and veterans carry scars. A narrator calls out the big moments as they happen, you can follow any creature with the camera and watch its brain fire, and you can drop meteors, grow food or change the climate while it runs.
@@ -64,7 +66,7 @@ To find out what decides whether predators evolve, I ran 50 worlds in parallel: 
 - **The share peaks at 6 to 9 plants per tick (8–12%),** then dips slightly at 12, where the plant-eating population is largest.
 - In 47 of the 50 worlds at least five predators appeared at some point, with a median first appearance at tick 6,530.
 
-With two seeds per cell the exact percentages are noisy, but the jump between 2 and 4 plants per tick shows up for both seeds. The raw results are in [`docs/sweep/sweep.csv`](docs/sweep/sweep.csv).
+The jump between 2 and 4 plants per tick shows up for both seeds. The raw results are in [`docs/sweep/sweep.csv`](docs/sweep/sweep.csv).
 
 ## The creatures
 
@@ -272,4 +274,4 @@ See [CHANGELOG.md](CHANGELOG.md) for what changed between versions.
 
 ## Licence
 
-MIT
+[MIT](LICENSE) © Leah Weldon
