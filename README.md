@@ -1,6 +1,6 @@
 # Primordial
 
-[![CI](https://github.com/leahweldon/primordial/actions/workflows/ci.yml/badge.svg)](https://github.com/leahweldon/primordial/actions/workflows/ci.yml) ![Python 3.11–3.13](https://img.shields.io/badge/Python-3.11%E2%80%933.13-3776ab) ![WebGL2](https://img.shields.io/badge/WebGL2-custom%20renderer-990000) ![FastAPI](https://img.shields.io/badge/FastAPI-WebSockets-009688) ![Tests: 66](https://img.shields.io/badge/tests-66-success) [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![Live demo](https://img.shields.io/badge/live%20demo-primordial--xpdg.onrender.com-7a4a1f)](https://primordial-xpdg.onrender.com) [![CI](https://github.com/leahweldon/primordial/actions/workflows/ci.yml/badge.svg)](https://github.com/leahweldon/primordial/actions/workflows/ci.yml) ![Python 3.11–3.13](https://img.shields.io/badge/Python-3.11%E2%80%933.13-3776ab) ![WebGL2](https://img.shields.io/badge/WebGL2-custom%20renderer-990000) ![FastAPI](https://img.shields.io/badge/FastAPI-WebSockets-009688) ![Tests: 66](https://img.shields.io/badge/tests-66-success) [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 An evolution sandbox. Hundreds of small creatures, each driven by its own tiny neural network, forage, fight and reproduce in a shared world. Nobody tells them what to do and there is no fitness function. The creatures that happen to survive long enough to have children pass on their brains and bodies, with small mutations. Over a few hundred generations, real strategies appear on their own: herds of fast foragers, ambush predators, an arms race between the two. And new species, each with its own name and its own place in a live tree of life.
 
@@ -8,7 +8,7 @@ You watch it happen in the browser, through a microscope rendered by a custom We
 
 ![Predators hunting through a swarm of grazers under the dark-field microscope](docs/predators.webp)
 
-[See the whole interface in one screenshot.](docs/screenshot-full.png)
+**[Try it live](https://primordial-xpdg.onrender.com)**: one shared world, running right now. It runs on a free server, so the first visit after a quiet spell can take up to a minute to wake up. [See the whole interface in one screenshot.](docs/screenshot-full.png)
 
 ## Run it
 
